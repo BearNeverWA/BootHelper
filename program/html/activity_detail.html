@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>活动详情</title>
+  <link rel="stylesheet" type="text/css" href="../../dist/css/bootstrap.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="../../dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+<!--nav-->
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SHUAssciator</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li id="homepage" class=""><a href="index.html">首页</a></li>
+        <li id="all_association"><a href="#">社团</a></li>
+        <li id="all_activity"><a href="#">活动</a></li>
+        <li id="userOp" class="dropdown" style="visibility: hidden">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">颜鑫<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="my_association"><a href="#">社团</a></li>
+            <li id="my_activity"><a href="#">活动</a></li>
+            <li><a href="#">关注</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">用户管理</li>
+            <li id="personal_info"><a href="#">我的信息</a></li>
+            <li id="user_change"><a href="#">更换用户</a></li>
+            <li id="logout" onclick="logout()"><a href="#">注销登录</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form id="info" method="post" class="navbar-form navbar-right" style="visibility: visible">
+        <div class="form-group">
+          <input id="user" type="text" placeholder="学号" class="form-control">
+        </div>
+        <div class="form-group">
+          <input id="pwd" type="password" placeholder="密码" class="form-control">
+        </div>
+        <button id="submit" type="submit" class="btn btn-success" onclick=" return login()">登录</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div><h1 align="center">标题</h1></div>
+  <div style="height: 30px"></div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-2">
+      <img src="../image/test4.jpg" style="width: 100%">
+    </div>
+    <div class="col-md-offset-1 col-md-2">
+      <h5><b>分类</b></h5>
+      <p>艺术体育类</p>
+      <div style="height: 10px"></div>
+      <h5><b>发起社团</b></h5>
+      <p>某某社团</p>
+    </div>
+    <div class="col-md-2">
+      <h5><b>开始时间</b></h5>
+      <p>2017-01-01 00:00:00</p>
+      <div style="height: 10px"></div>
+      <h5><b>结束时间</b></h5>
+      <p>2017-01-01 00:00:01</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-5 col-md-4">
+      <b>简介</b>
+      <p>我也不知道这是什么活动看起来很厉害的样子啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+    </div>
+  </div>
+  <div style="height: 20px;"></div>
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
+        <a class="btn btn-primary btn-success pull-right" href="#">我要报名</a>
+      </div>
+      <div class="col-md-6">
+        <a class="btn btn-primary btn-danger pull-left" href="#">取消报名</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<h1></h1>
+</body>
+</html>
